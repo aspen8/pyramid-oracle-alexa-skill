@@ -83,7 +83,6 @@ var handlers = {
 
         this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
     },
-        },
     'Unhandled': function () {
         this.emit(':ask', HELP_MESSAGE, HELP_REPROMPT);
     },
