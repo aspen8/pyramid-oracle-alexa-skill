@@ -88,7 +88,7 @@ var handlers = {
         var speechOutput = randomMessage + randomPerson;
 
 
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomMessage + randomPerson)
     },
     'BestDressedIntent': function () {
         var personArray = who;
@@ -100,7 +100,7 @@ var handlers = {
         var speechOutput = randomMessage + randomPerson;
 
 
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomMessage + randomPerson)
     },
     'BiggestBonusIntent': function () {
         var personArray = who;
@@ -112,7 +112,7 @@ var handlers = {
         var speechOutput = randomMessage + randomPerson;
 
 
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomMessage + randomPerson)
     },
     'Unhandled': function () {
         this.emit(':ask', HELP_MESSAGE, HELP_REPROMPT);
