@@ -76,7 +76,7 @@ var handlers = {
         this.emit('BestFootballerIntent');
     },
     'BestFootballerIntent': function () {
-        var personArray = me;
+        var personArray = who;
 	    var messageArray = footballer;
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
@@ -88,7 +88,7 @@ var handlers = {
         this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
     },
     'BestDressedIntent': function () {
-        var personArray = me;
+        var personArray = who;
         var messageArray = dresser
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
@@ -100,7 +100,7 @@ var handlers = {
         this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
     },
     'BiggestBonusIntent': function () {
-        var personArray = me;
+        var personArray = who;
         var messageArray = bonus
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
