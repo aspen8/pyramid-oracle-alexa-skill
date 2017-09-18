@@ -17,6 +17,7 @@ var STOP_MESSAGE = "Goodbye!";
 //=========================================================================================================================================
 // List of statements
 //=========================================================================================================================================
+
 var me = [
     "you, of course",
     "Alasdair",
@@ -36,6 +37,9 @@ var team = [
     "Ojas",
 // etc
 ];
+
+//Update this line to switch between me and the team
+var who = me
 
 var footballer = [
     "The best footballer is definitely ",
@@ -73,11 +77,35 @@ var handlers = {
     },
     'BestFootballerIntent': function () {
         var personArray = me;
-	var messageArray = footballer;
+	    var messageArray = footballer;
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
-	var footballMessage = Math.floor(Math.random() * messageArray.length);
-	var randomMessage = messageArray[footballMessage];
+	    var footballMessage = Math.floor(Math.random() * messageArray.length);
+	    var randomMessage = messageArray[footballMessage];
+        var speechOutput = randomMessage + randomPerson;
+
+
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
+    },
+    'BestDressedIntent': function () {
+        var personArray = me;
+        var messageArray = dresser
+        var personIndex = Math.floor(Math.random() * personArray.length);
+        var randomPerson = personArray[personIndex];
+        var dresserMessage = Math.floor(Math.random() * messageArray.length);
+        var randomMessage = messageArray[dresserMessage];
+        var speechOutput = randomMessage + randomPerson;
+
+
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
+    },
+    'BiggestBonusIntent': function () {
+        var personArray = me;
+        var messageArray = bonus
+        var personIndex = Math.floor(Math.random() * personArray.length);
+        var randomPerson = personArray[personIndex];
+        var bonusMessage = Math.floor(Math.random() * messageArray.length);
+        var randomMessage = messageArray[bonusMessage];
         var speechOutput = randomMessage + randomPerson;
 
 
