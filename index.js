@@ -71,14 +71,16 @@ var handlers = {
     'LaunchRequest': function () {
         this.emit('BestFootballerIntent');
     },
-    'Unhandled': function () {
-        this.emit(':ask', HELP_MESSAGE, HELP_MESSAGE);
-    },
     'BestFootballerIntent': function () {
         var personArray = me;
+	var messageArray = footballer;
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
-        var speechOutput = randomPerson;
+	var footballMessage = Math.floor(Math.random() * messageArray.length);
+	var randomMessage = messageArray[footballMessage];
+        var speechOutput = randomMessage + randomPerson;
+
+
         this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
     },
     'AMAZON.HelpIntent': function () {
@@ -87,9 +89,11 @@ var handlers = {
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
+        this.response.speak(STOP_MESSAGE);
+	this.emit(':responseReady');	
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
+        this.response.speak(STOP_MESSAGE);
+	this.emit(':responseReady');
     }
 };
