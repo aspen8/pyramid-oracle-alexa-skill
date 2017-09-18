@@ -75,7 +75,7 @@ var handlers = {
         this.emit(':ask', HELP_MESSAGE, HELP_MESSAGE);
     },
     'BestFootballerIntent': function () {
-        var personArray = team;
+        var personArray = me;
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
         var speechOutput = randomPerson;
