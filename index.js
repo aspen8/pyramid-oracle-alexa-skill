@@ -55,6 +55,7 @@ var bonus = [
     "The best bonus is going to ",
     "The biggest bonus is definitely going to ",
 //    "I don't know who is getting the best bonus, but it's definitely not ",
+];
 
 //=========================================================================================================================================
 //Editing anything below this line might break your skill.  
