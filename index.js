@@ -21,6 +21,7 @@ var me = [
     "you, of course",
     "Alasdair",
     "Big Al",
+];
 
 var team = [
     "DJ",
