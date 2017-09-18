@@ -9,26 +9,51 @@ var Alexa = require('alexa-sdk');
 //Make sure to enclose your value in quotes, like this: var APP_ID = "amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1";
 var APP_ID = undefined;
 
-var SKILL_NAME = "Dog's abuse";
-var HELP_MESSAGE = "You can ask dogs abuse to insult your dog" 
+var SKILL_NAME = "Pyramid Oracle";
+var HELP_MESSAGE = "Ask the oracle who is the best footballer, best dressed or who is getting the biggest bonus" 
 var HELP_REPROMPT = "What can I help you with?";
 var STOP_MESSAGE = "Goodbye!";
 
 //=========================================================================================================================================
 // List of statements
 //=========================================================================================================================================
-var data = [
-//    "Ella's breath is worse than Satan's armpit",
-    "Ella is a dirty wee strumpet",
-    "That dog is a lazy slag",
-    "Ella is a smelly wee cow",
-    "That is the laziest greyhound the world has ever seen",
-    "That dog is a cat in disguise",
-    "I don't believe that dog is an ex racer, she can't even run the length of herself",
-    "Ella is a slagosaurus",
-    "That dog is a flea-ridden skank",
-    "Ella, you fuckfaced wee swine, nobody even likes you",
+var me = [
+    "you, of course",
+    "Alasdair",
+    "Big Al",
+
+var team = [
+    "DJ",
+    "Graham",
+    "Kev",
+    "Andy",
+    "Abdullah",
+    "Alex",
+    "Craig",
+    "Gaurav",
+    "Donnie",
+    "Ojas",
+// etc
 ];
+
+var footballer = [
+    "The best footballer is definitely ",
+    "The best player in PTP is ",
+    "The greatest player in the team is ",
+//    "The best player in the team is anyone other than ",
+];
+
+var dresser = [
+    "The best dressed member of the team is ",
+    "The smartest dresser in the team is ",
+    "The sharpest looking person in the team is ",
+//    "I'm not upto speed on the latest trends but it's definitely not ",
+];
+
+var bonus = [
+    "The best bonus is going to ",
+    "The biggest bonus is definitely going to ",
+//    "I don't know who is getting the best bonus, but it's definitely not ",
 
 //=========================================================================================================================================
 //Editing anything below this line might break your skill.  
@@ -42,17 +67,17 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewAbuseIntent');
+        this.emit('BestFootballerIntent');
     },
     'Unhandled': function () {
         this.emit(':ask', HELP_MESSAGE, HELP_MESSAGE);
     },
-    'GetNewAbuseIntent': function () {
-        var abuseArr = data;
-        var abuseIndex = Math.floor(Math.random() * abuseArr.length);
-        var randomInsult = abuseArr[abuseIndex];
-        var speechOutput = randomInsult;
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomInsult)
+    'BestFootballerIntent': function () {
+        var personArray = team;
+        var personIndex = Math.floor(Math.random() * personArray.length);
+        var randomPerson = personArray[personIndex];
+        var speechOutput = randomPerson;
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomPerson)
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = HELP_MESSAGE;
