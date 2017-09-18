@@ -35,6 +35,9 @@ var team = [
     "Gaurav",
     "Donnie",
     "Ojas",
+    "Angela",
+    "Sunderam",
+    "Ken",
 // etc
 ];
 
