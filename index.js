@@ -39,7 +39,7 @@ var team = [
 ];
 
 //Update this line to switch between me and the team
-var who = me
+var who = team 
 
 var footballer = [
     "The best footballer is definitely ",
