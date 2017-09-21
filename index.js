@@ -49,7 +49,7 @@ var footballer = [
     "The best footballer is definitely ",
     "The best player in PTP is ",
     "The greatest player in the team is ",
-    "The best player in the team is anyone other than ",
+    "The best player in the team, is anyone other than ",
 ];
 
 var dresser = [
