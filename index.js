@@ -34,7 +34,7 @@ var team = [
     "Craig",
     "Gaurav",
     "Donnie",
-    "Ojas",
+    "Ohjas",
     "Angela",
     "Sunderam",
     "Ken",
