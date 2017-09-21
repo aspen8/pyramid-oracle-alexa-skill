@@ -49,20 +49,20 @@ var footballer = [
     "The best footballer is definitely ",
     "The best player in PTP is ",
     "The greatest player in the team is ",
-//    "The best player in the team is anyone other than ",
+    "The best player in the team is anyone other than ",
 ];
 
 var dresser = [
     "The best dressed member of the team is ",
     "The smartest dresser in the team is ",
     "The sharpest looking person in the team is ",
-//    "I'm not upto speed on the latest trends but it's definitely not ",
+    "I'm not upto speed on the latest trends but it's definitely not ",
 ];
 
 var bonus = [
     "The best bonus is going to ",
     "The biggest bonus is definitely going to ",
-//    "I don't know who is getting the best bonus, but it's definitely not ",
+    "I don't know who is getting the best bonus, but it's definitely not ",
 ];
 
 //=========================================================================================================================================
