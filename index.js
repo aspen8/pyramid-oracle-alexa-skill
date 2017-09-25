@@ -48,9 +48,10 @@ var who = team
 var footballer = [
     "The best player is definitely ",
     "The most gifted footballer in the team is ",
-    "There is one person that makes Messi look average and that person is ",
-    "I'm not sure who the best is but I know the best worst is ",
+    "There is one person that makes Messi look average, and that person is ",
+    "I'm not sure who the best is but I know the worst is ",
     "Not sure, but I know someone that has two left feet, I'm looking at you ",
+    "Hmm I don't know, but the scruffiest person is probably "
 ];
 
 var dresser = [
