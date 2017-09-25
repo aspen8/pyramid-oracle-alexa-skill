@@ -50,6 +50,7 @@ var footballer = [
     "The best player in PTP is ",
     "The greatest player in the team is ",
     "The best player in the team, is anyone other than ",
+    "I'm more of a rugby fan, but I know it's not ",
 ];
 
 var dresser = [
@@ -63,6 +64,7 @@ var bonus = [
     "The best bonus is going to ",
     "The biggest bonus is definitely going to ",
     "I don't know who is getting the best bonus, but it's definitely not ",
+    "I'm not at liberty to divulge that information, but it's definitely not ",
 ];
 
 //=========================================================================================================================================
