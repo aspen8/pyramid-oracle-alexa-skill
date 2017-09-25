@@ -45,12 +45,12 @@ var team = [
 //Update this line to switch between me and the team
 var who = me 
 
-var runner = [
-    "The fittest person is definitely ",
-    "The most athletic member of the team is ",
-    "There is one person that makes Mo Farah look average and that person is ",
-//    "I'm not sure who the fittest is but I know the best dancer is ",
-//    "Not sure, but I know someone that can't run the length of themself, I'm looking at you ",
+var footballer = [
+    "The best player is definitely ",
+    "The most gifted footballer in the team is ",
+    "There is one person that makes Messi look average and that person is ",
+//    "I'm not sure who the best is but I know the best worst is ",
+//    "Not sure, but I know someone that has two left feet, I'm looking at you ",
 ];
 
 var dresser = [
@@ -79,15 +79,15 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('BestRunnererIntent');
+        this.emit('BestFootballerIntent');
     },
-    'BestRunnererIntent': function () {
+    'BestFootballerIntent': function () {
         var personArray = who;
-	    var messageArray = runnerer;
+	    var messageArray = footballer;
         var personIndex = Math.floor(Math.random() * personArray.length);
         var randomPerson = personArray[personIndex];
-	    var runnerMessage = Math.floor(Math.random() * messageArray.length);
-	    var randomMessage = messageArray[runnerMessage];
+	    varfootballMessage = Math.floor(Math.random() * messageArray.length);
+	    var randomMessage = messageArray[footballMessage];
         var speechOutput = randomMessage + randomPerson;
 
 
