@@ -18,7 +18,7 @@ stage('SonarQube analysis') {
    }
    stage('Test') {
        //payload = payload.txt
-       //aws lambda invoke --function-name 'PyramidOracle' --payload "$payload"
+       //aws lambda invoke --function-name 'PyramidOracle' --payload "$payload" --Known issue with ASK API, amazon investigating
        //
        sleep 5
    }
