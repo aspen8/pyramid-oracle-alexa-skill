@@ -52,29 +52,29 @@ var team = [
 ];
 
 //Update this line to switch between me and the team
-var who = team 
+var who = me 
 
 var footballer = [
     "The best player is definitely ",
     "The most gifted footballer in the team is ",
     "There is one person that makes Messi look average, and that person is ",
-    "I'm not sure who the best is but I know the worst is ",
-    "Not sure, but I know someone that has two left feet, I'm looking at you ",
+//    "I'm not sure who the best is but I know the worst is ",
+//    "Not sure, but I know someone that has two left feet, I'm looking at you ",
 ];
 
 var dresser = [
     "The best dressed member of the team is ",
     "The smartest dresser in the team is ",
     "The sharpest looking person in the team is ",
-    "I'm not upto speed on the latest trends but it's definitely not ",
-    "Hmm I don't know, but the scruffiest person is probably "
+//    "I'm not upto speed on the latest trends but it's definitely not ",
+//    "Hmm I don't know, but the scruffiest person is probably "
 ];
 
 var bonus = [
     "The best bonus is going to ",
     "The biggest bonus is definitely going to ",
-    "I don't know who is getting the best bonus, but it's definitely not ",
-    "I'm not at liberty to divulge that information, but it's definitely not ",
+//    "I don't know who is getting the best bonus, but it's definitely not ",
+//    "I'm not at liberty to divulge that information, but it's definitely not ",
 ];
 
 //=========================================================================================================================================
