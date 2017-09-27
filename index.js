@@ -51,7 +51,6 @@ var footballer = [
     "There is one person that makes Messi look average, and that person is ",
     "I'm not sure who the best is but I know the worst is ",
     "Not sure, but I know someone that has two left feet, I'm looking at you ",
-    "Hmm I don't know, but the scruffiest person is probably "
 ];
 
 var dresser = [
@@ -59,6 +58,7 @@ var dresser = [
     "The smartest dresser in the team is ",
     "The sharpest looking person in the team is ",
     "I'm not upto speed on the latest trends but it's definitely not ",
+    "Hmm I don't know, but the scruffiest person is probably "
 ];
 
 var bonus = [
