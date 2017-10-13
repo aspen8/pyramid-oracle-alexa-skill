@@ -25,15 +25,15 @@ var me = [
 ];
 
 var team = [
-    "Ian Mcgonigle",
-    "Kev Cameron",
-    "Mike Staggs",
-    "Vibha Jahagirdar",
-    "Sheeba Nadar",
-    "Will Papworth",
-    "Pratima Nayak",
-    "Hitesh Jethwani",
-    "Sebastian Lim",
+    "Ian",
+    "Kev",
+    "Mike",
+    "Vibha",
+    "Sheeba",
+    "Will",
+    "Pratima",
+    "Hitesh",
+    "Sebastian",
 // etc
 ];
 
