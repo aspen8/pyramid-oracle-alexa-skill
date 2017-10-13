@@ -25,29 +25,15 @@ var me = [
 ];
 
 var team = [
-    "DJ",
-    "Graham",
-    "Kev",
-    "Andy",
-    "Abdullah",
-    "Alex",
-    "Craig",
-    "Gaurav",
-    "Donnie",
-    "Ohjas",
-    "Angela",
-    "Sunderam",
-    "Ken",
-    "Shrawan",
-    "Laura",
-    "Chetan",
-    "Kieran",
-    "Derek",
-    "Iskren",
-    "Pramod",
-    "Darren",
-    "Kamal",
-    "Alejandra",
+    "Ian Mcgonigle",
+    "Kev Cameron",
+    "Mike Staggs",
+    "Vibha Jahagirdar",
+    "Sheeba Nadar",
+    "Will Papworth",
+    "Pratima Nayak",
+    "Hitesh Jethwani",
+    "Sebastian Lim",
 // etc
 ];
 
