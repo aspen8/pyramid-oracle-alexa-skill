@@ -25,13 +25,11 @@ var me = [
 ];
 
 var team = [
-    "Prem",
+    "Graham",
     "Kev",
-    "Ranjan",
-    "Melik",
-    "Ibrahim",
-    "Sukhjeev",
-    "Sharon",
+    "Craig",
+    "Kieran",
+    "Phil",
 // etc
 ];
 
